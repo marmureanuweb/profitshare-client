@@ -19,7 +19,7 @@
 
 First, install Profitshare PHP API Client via the [composer](https://getcomposer.org/) package manager:
 ```bash
-composer require catalin-ionut/profitshare-client
+composer require marmureanuweb/profitshare-client
 ```
 This package uses [json-mapper](https://packagist.org/packages/netresearch/jsonmapper) to map the response to models for type validation and autocomplition.
 
