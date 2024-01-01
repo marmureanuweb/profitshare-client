@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -7,17 +8,17 @@ class Paginator
     /**
      * @var int
      */
-    public $itemsPerPage;
+    public int $itemsPerPage;
 
     /**
      * @var int
      */
-    public $currentPage;
+    public int $currentPage;
 
     /**
      * @var int
      */
-    public $totalPages;
+    public int $totalPages;
 
     public function hasNextPage(): bool
     {

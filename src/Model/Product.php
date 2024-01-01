@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -7,50 +8,50 @@ class Product
     /**
      * @var int
      */
-    public $advertiser_id;
+    public int $advertiser_id;
 
     /**
      * @var string
      */
-    public $advertiser_name;
+    public string $advertiser_name;
 
     /**
      * @var string
      */
-    public $category_name;
+    public string $category_name;
 
     /**
      * @var string
      */
-    public $name;
+    public string $name;
 
     /**
      * @var string
      */
-    public $link;
+    public string $link;
 
     /**
      * @var string
      */
-    public $image;
+    public string $image;
 
     /**
      * @var float
      */
-    public $price;
+    public float $price;
 
     /**
      * @var float
      */
-    public $price_vat;
+    public float $price_vat;
 
     /**
      * @var float
      */
-    public $price_discounted;
+    public float $price_discounted;
 
     /**
      * @var string
      */
-    public $affiliate_link;
+    public string $affiliate_link;
 }

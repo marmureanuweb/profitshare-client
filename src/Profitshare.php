@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient;
 
@@ -18,16 +19,19 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 
 class Profitshare
 {
-    private const API_URL = 'http://api.profitshare.ro/';
+    private const API_URL = 'https://api.profitshare.ro/';
 
     /** @var string */
-    private $apiKey;
+    private string $apiKey;
+
     /** @var string */
-    private $apiUser;
-    /** @var JsonMapper */
-    private $mapper;
-    /** @var HttpClientInterface */
-    private $httpClient;
+    private string $apiUser;
+
+    /** @var JsonMapper|null */
+    private JsonMapper $mapper;
+
+    /** @var HttpClientInterface|null */
+    private HttpClientInterface $httpClient;
 
     public function __construct(string $apiUser, string $apiKey)
     {

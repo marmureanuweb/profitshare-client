@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -7,40 +8,40 @@ class Campaign
     /**
      * @var int
      */
-    public $id;
+    public int $id;
 
     /**
      * @var string
      */
-    public $name;
+    public string $name;
 
     /**
      * @var string
      */
-    public $commissionType;
+    public string $commissionType;
 
     /**
-     * @var \DateTime
+     * @var \DateTimeInterface
      */
-    public $startDate;
+    public \DateTimeInterface $startDate;
 
     /**
-     * @var \DateTime
+     * @var \DateTimeInterface
      */
-    public $endDate;
+    public \DateTimeInterface $endDate;
 
     /**
      * @var string
      */
-    public $url;
+    public string $url;
 
     /**
      * @var int
      */
-    public $advertiser_id;
+    public int $advertiser_id;
 
     /**
      * @var array
      */
-    public $banners;
+    public array $banners;
 }

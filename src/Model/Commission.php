@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -9,50 +10,50 @@ class Commission
     /**
      * @var int
      */
-    public $order_id;
+    public int $order_id;
 
     /**
      * @var string
      */
-    public $order_ref;
+    public string $order_ref;
 
     /**
      * @var string
      */
-    public $order_status;
+    public string $order_status;
 
     /**
      * @var int
      */
-    public $advertiser_id;
+    public int $advertiser_id;
 
     /**
      * @var string
      */
-    public $hash;
+    public string $hash;
 
     /**
-     * @var DateTime
+     * @var \DateTimeInterface
      */
-    public $order_date;
+    public \DateTimeInterface $order_date;
 
     /**
-     * @var DateTime
+     * @var \DateTimeInterface
      */
-    public $order_updated;
-
-    /**
-     * @var string
-     */
-    public $items_status;
+    public \DateTimeInterface $order_updated;
 
     /**
      * @var string
      */
-    public $items_commision;
+    public string $items_status;
 
     /**
      * @var string
      */
-    public $items_commision_value;
+    public string $items_commision;
+
+    /**
+     * @var string
+     */
+    public string $items_commision_value;
 }

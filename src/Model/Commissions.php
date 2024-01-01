@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -7,20 +8,20 @@ class Commissions
     /**
      * @var int
      */
-    public $current_page;
+    public int $current_page;
 
     /**
      * @var int
      */
-    public $total_pages;
+    public int $total_pages;
 
     /**
      * @var int
      */
-    public $records_per_page;
+    public int $records_per_page;
 
     /**
      * @var Commission[]
      */
-    public $commissions;
+    public array $commissions;
 }

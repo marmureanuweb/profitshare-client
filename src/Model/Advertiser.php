@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -7,25 +8,25 @@ class Advertiser
     /**
      * @var int
      */
-    public $id;
+    public int $id;
 
     /**
      * @var string
      */
-    public $name;
+    public string $name;
 
     /**
      * @var string
      */
-    public $logo;
+    public string $logo;
 
     /**
      * @var string
      */
-    public $category;
+    public string $category;
 
     /**
      * @var string
      */
-    public $url;
+    public string $url;
 }

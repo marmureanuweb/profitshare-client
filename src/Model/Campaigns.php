@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace ProfitshareClient\Model;
 
@@ -7,10 +8,10 @@ class Campaigns
     /**
      * @var Paginator
      */
-    public $paginator;
+    public Paginator $paginator;
 
     /**
      * @var Campaign[]
      */
-    public $campaigns;
+    public array $campaigns;
 }
